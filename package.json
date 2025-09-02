@@ -1,0 +1,8 @@
+{
+  "name": "beatrice-ip-stole",
+  "version": "1.0.0",
+  "description": "Project for getting IP and sending to a Telegram bot via Netlify Functions.",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
